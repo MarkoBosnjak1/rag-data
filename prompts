@@ -1,0 +1,133 @@
+Tech markdown
+Please  technologies.md markdown file.
+
+Products
+CXP product numbers are deliverables in artifactory(binaries, source code, etc).
+Create products.md markdown file.
+
+Description(with Contacts)
+Create description.md markdown file, containing general summary of the team and people/contacts.
+
+way of working/processes
+Create way of working.md markdown file.
+
+stakeholders/customers
+Stakeholders can be different teams from json data.
+Create stakeholders.md markdown file.
+
+reports(kpi/monitoring/alerts)
+Create reports.md markdown file.
+
+Each markdown should have 6 headers with text.
+This should represent wiki page from some software development team in real life.
+Data should be different for each time, since I want to use it for rag.
+Make each heading text 150 to 250 words!
+Reference to the organization data for each team and subunits with relations:
+
+{
+  organization_name: "DCV",
+  description: "Main development and testing unit for Ericsson radio and digital products",
+  focus: "C++ development, Java testing, CI oriented",
+  client: "Ericsson",
+  subunits: [
+    {
+      name: "DCV/D",
+      teams: [
+        {
+          name: "Team Buffalo",
+          number_of_people: 8,
+          contacts: ["john.doe@ericsson.com", "sarah.smith@ericsson.com"],
+          short_description:
+            "Writes and maintains automated tests for radio software, ensuring signal processing modules function correctly across various hardware configurations.",
+          products: ["CXP9012345", "CXP9012346"],
+          technologies: ["C++", "Java", "JCAT", "Jenkins", "Git"],
+          WoW: "Agile Scrum with 2-week sprints",
+        },
+        {
+          name: "Team Thunder",
+          number_of_people: 5,
+          contacts: ["mike.jones@ericsson.com"],
+          short_description:
+            "Develops high-performance radio signal processing components, optimizing algorithms for real-time data handling in Ericsson's next-gen radio units.",
+          products: ["CXP9012347", "CXP9012348", "CXP9012349"],
+          technologies: ["C++", "Java", "Gerrit", "Nexus"],
+          WoW: "Kanban with continuous delivery",
+        },
+      ],
+    },
+    {
+      name: "DCV/S",
+      teams: [
+        {
+          name: "Team MegaJump",
+          number_of_people: 12,
+          contacts: ["anna.brown@ericsson.com", "peter.white@ericsson.com"],
+          short_description:
+            "Maintains and enhances CI/CD pipelines for digital units, automating build processes and ensuring seamless integration of software updates across multiple platforms.",
+          products: ["CXP9012350", "CXP9012351"],
+          technologies: ["C++", "Jenkins", "Git", "Nexus"],
+          WoW: "DevOps with automated testing",
+        },
+        {
+          name: "Team Rocket",
+          number_of_people: 7,
+          contacts: ["lisa.green@ericsson.com"],
+          short_description:
+            "Develops firmware for digital units, focusing on low-level system optimizations and compatibility with Ericsson's hardware specifications.",
+          products: ["CXP9012352", "CXP9012353", "CXP9012354"],
+          technologies: ["C++", "Java", "JCAT", "Gerrit"],
+          WoW: "Agile with pair programming",
+        },
+        {
+          name: "Team Vortex",
+          number_of_people: 4,
+          contacts: ["tom.black@ericsson.com"],
+          short_description:
+            "Writes and executes integration tests for radio modules, verifying end-to-end functionality and performance under various network conditions.",
+          products: ["CXP9012355"],
+          technologies: ["Java", "JCAT", "Jenkins", "Git"],
+          WoW: "Scrum with daily standups",
+        },
+      ],
+    },
+    {
+      name: "DCV/C",
+      teams: [
+        {
+          name: "Team Eclipse",
+          number_of_people: 10,
+          contacts: ["emma.wilson@ericsson.com", "david.lee@ericsson.com"],
+          short_description:
+            "Develops advanced signal processing algorithms for radio systems, focusing on improving throughput and reducing latency in high-traffic scenarios.",
+          products: ["CXP9012356", "CXP9012357"],
+          technologies: ["C++", "Java", "Gerrit", "Nexus"],
+          WoW: "Agile with TDD",
+        },
+        {
+          name: "Team Nebula",
+          number_of_people: 6,
+          contacts: ["olga.martin@ericsson.com"],
+          short_description:
+            "Tests digital unit compatibility with legacy and modern systems, ensuring interoperability and reliability across Ericsson's product ecosystem.",
+          products: ["CXP9012358", "CXP9012359", "CXP9012360"],
+          technologies: ["Java", "JCAT", "Jenkins", "Git"],
+          WoW: "Scrum with bi-weekly reviews",
+        },
+        {
+          name: "Team Pulse",
+          number_of_people: 9,
+          contacts: ["robert.taylor@ericsson.com", "kate.moore@ericsson.com"],
+          short_description:
+            "Optimizes radio software performance, analyzing bottlenecks and implementing enhancements to improve efficiency and stability in production environments.",
+          products: ["CXP9012361", "CXP9012362"],
+          technologies: ["C++", "Java", "Gerrit", "Nexus"],
+          WoW: "Kanban with CI/CD",
+        },
+      ],
+    },
+  ],
+}
+
+Create for team Buffalo!
+
+
